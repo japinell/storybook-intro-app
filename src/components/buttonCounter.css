@@ -9,3 +9,12 @@
     padding: 12px 24px;
     background-color: lightseagreen;
 }
+
+.counter-button--primary {
+    font-weight: 700;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}

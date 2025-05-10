@@ -6,6 +6,11 @@ export default {
   component: ButtonCounter,
   tags: ["autodocs"],
   argTypes: {
+    buttonStyle: {
+        control: "select",
+        options: ["counter-button--small", "counter-button--large", "counter-button--primary"],
+        description: "Style of the button",
+    },
     backgroundColor: {
       control: "color",
       description: "Background color of the button",
