@@ -8,7 +8,7 @@ export default {
   argTypes: {
     buttonStyle: {
         control: "select",
-        options: ["counter-button--small", "counter-button--large", "counter-button--primary"],
+        options: ["counter-button--small", "counter-button--large", "counter-button--primary", "counter-button--secondary"],
         description: "Style of the button",
     },
     backgroundColor: {
