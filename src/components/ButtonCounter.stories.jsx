@@ -1,8 +1,14 @@
+//import { ArgTypes } from "@storybook/blocks";
 import { ButtonCounter } from "./ButtonCounter";
 
 export default {
     title: 'Counter/ButtonCounter',
     component: ButtonCounter,
+    argTypes: {
+        backgroundColor: {
+           control: 'color' 
+        }
+    }
 }
 
 // Large button story
