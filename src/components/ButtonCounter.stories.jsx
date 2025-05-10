@@ -8,7 +8,15 @@ export default {
 // Large button story
 export const Large = {
     args: {
-        szie: 'large',
+        size: 'large',
         label: 'Large Button',
+    }
+}
+
+// Small button story
+export const Small = {
+    args: {
+        size: 'small',
+        label: 'Small Button',
     }
 }
