@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ButtonCounter } from "./ButtonCounter";
 import { Counter } from "./Counter";
+import {within, userEvent} from "@storybook/testing-library";
 
 export default {
   title: "Counter/Page",
@@ -26,3 +27,13 @@ export const Default = () => {
     </Counter>
   );
 };
+
+export const IncrementByTwo = {
+    play: async ({canvasElement}) => {
+        const canvas = within(canvasElement);
+        const button = await canvas.getByRole('button', {name: ButtonCounter});
+        
+        await userEvent.click(button);
+        await userEvent.click(button);
+    }
+}
