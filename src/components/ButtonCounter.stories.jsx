@@ -7,9 +7,17 @@ export default {
   tags: ["autodocs"],
   argTypes: {
     buttonStyle: {
-        control: "select",
-        options: ["counter-button--small", "counter-button--large", "counter-button--primary", "counter-button--secondary"],
-        description: "Style of the button",
+      control: "select",
+      options: [
+        "counter-button--small",
+        "counter-button--large",
+        "counter-button--primary",
+        "counter-button--secondary",
+      ],
+      description: "Style of the button",
+    },
+    onClick: {
+      action: "clicked",
     },
     backgroundColor: {
       control: "color",
@@ -18,26 +26,26 @@ export default {
         defaultValue: {
           summary: "#bcebe6",
         },
-      }
+      },
     },
     label: {
-        control: "text",
-        description: "Label of the button",
-        table: {
-          defaultValue: {
-            summary: "Click me",
-          },
+      control: "text",
+      description: "Label of the button",
+      table: {
+        defaultValue: {
+          summary: "Click me",
         },
+      },
     },
     size: {
-        control: "text",
-        description: "Size of the button",
-        table: {
-          defaultValue: {
-            summary: "large",
-          },
+      control: "text",
+      description: "Size of the button",
+      table: {
+        defaultValue: {
+          summary: "large",
         },
-    }
+      },
+    },
   },
 };
 
@@ -49,11 +57,11 @@ export const Large = {
   },
   parameters: {
     docs: {
-        description: {
-            story: "This is a large button with a default label.",
-        },
-    }
-  }
+      description: {
+        story: "This is a large button with a default label.",
+      },
+    },
+  },
 };
 
 // Small button story
@@ -64,9 +72,9 @@ export const Small = {
   },
   parameters: {
     docs: {
-        description: {
-            story: "This is a small button with a default label.",
-        },
-    }
-  }
+      description: {
+        story: "This is a small button with a default label.",
+      },
+    },
+  },
 };
